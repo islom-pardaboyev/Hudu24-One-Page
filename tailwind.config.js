@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     container: {
       center: true,
-      padding: ".5rem",
+      padding: "1rem",
   
     },
     extend: {
@@ -16,13 +16,24 @@ module.exports = {
         },
         dark: {
           default: "#283648",
+          100: '#171717'
         },
+        blue:{
+          DEFAULT: '#2185F8'
+        },
+        red: {
+          DEFAULT: '#DD33330A',
+          100: '#DD333314'
+        }
       },
       fontFamily: {
         'poppins': ['Poppins', 'sans-serif'],
       },
       margin: {
         9.5: '38px'
+      },
+      spacing: {
+        4.5: '16px'
       }
     },
   },
