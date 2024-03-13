@@ -13,6 +13,7 @@ module.exports = {
           default: "#E1E3E6",
           100: "#697583",
           200: "#A4B0BE",
+          300: '#F4F4F4'
         },
         dark: {
           default: "#283648",
@@ -23,7 +24,8 @@ module.exports = {
         },
         red: {
           DEFAULT: '#DD33330A',
-          100: '#DD333314'
+          100: '#DD333314',
+          200: '#FFF6F6'
         }
       },
       fontFamily: {
