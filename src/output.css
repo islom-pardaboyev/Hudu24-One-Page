@@ -594,8 +594,12 @@ video {
   position: absolute;
 }
 
-.left-\[45\%\] {
-  left: 45%;
+.-right-64 {
+  right: -16rem;
+}
+
+.right-3 {
+  right: 0.75rem;
 }
 
 .right-\[30\%\] {
@@ -610,64 +614,13 @@ video {
   top: -50%;
 }
 
-.right-0 {
-  right: 0px;
-}
-
-.right-1 {
-  right: 0.25rem;
-}
-
-.right-3 {
-  right: 0.75rem;
-}
-
-.-right-3 {
-  right: -0.75rem;
-}
-
-.-right-8 {
-  right: -2rem;
-}
-
-.-right-2 {
-  right: -0.5rem;
-}
-
-.-right-28 {
-  right: -7rem;
-}
-
-.-right-36 {
-  right: -9rem;
-}
-
-.-right-4 {
-  right: -1rem;
-}
-
-.-right-48 {
-  right: -12rem;
-}
-
-.-right-56 {
-  right: -14rem;
-}
-
-.-right-6 {
-  right: -1.5rem;
-}
-
-.-right-64 {
-  right: -16rem;
-}
-
-.right-64 {
-  right: 16rem;
-}
-
 .col-span-12 {
   grid-column: span 12 / span 12;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .my-2 {
@@ -688,11 +641,6 @@ video {
 .my-6 {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
-}
-
-.mx-auto {
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .mb-14 {
@@ -795,32 +743,12 @@ video {
   width: 1.25rem;
 }
 
-.w-\[160px\] {
-  width: 160px;
-}
-
-.w-full {
-  width: 100%;
-}
-
-.w-\[px\] {
-  width: px;
-}
-
-.w-\[\] {
-  width: ;
-}
-
-.w-\[300px\] {
-  width: 300px;
-}
-
 .w-\[400px\] {
   width: 400px;
 }
 
-.w-\[170px\] {
-  width: 170px;
+.w-full {
+  width: 100%;
 }
 
 .grid-cols-12 {
@@ -879,22 +807,9 @@ video {
   border-width: 2px;
 }
 
-.border-t-2 {
-  border-top-width: 2px;
-}
-
-.border-t-4 {
-  border-top-width: 4px;
-}
-
 .border-\[\#E1E3E6\] {
   --tw-border-opacity: 1;
   border-color: rgb(225 227 230 / var(--tw-border-opacity));
-}
-
-.border-green-100 {
-  --tw-border-opacity: 1;
-  border-color: rgb(0 127 115 / var(--tw-border-opacity));
 }
 
 .border-grey-100 {
@@ -938,10 +853,6 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.p-2 {
-  padding: 0.5rem;
 }
 
 .p-3 {
@@ -1045,6 +956,10 @@ video {
   line-height: 2.5rem;
 }
 
+.text-\[9px\] {
+  font-size: 9px;
+}
+
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
@@ -1058,14 +973,6 @@ video {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
-}
-
-.text-\[10px\] {
-  font-size: 10px;
-}
-
-.text-\[9px\] {
-  font-size: 9px;
 }
 
 .font-bold {
@@ -1086,11 +993,6 @@ video {
   color: rgb(40 54 72 / var(--tw-text-opacity));
 }
 
-.text-green {
-  --tw-text-opacity: 1;
-  color: rgb(76 205 153 / var(--tw-text-opacity));
-}
-
 .text-grey-100 {
   --tw-text-opacity: 1;
   color: rgb(105 117 131 / var(--tw-text-opacity));
@@ -1101,9 +1003,18 @@ video {
   color: rgb(164 176 190 / var(--tw-text-opacity));
 }
 
+.text-red-500 {
+  --tw-text-opacity: 1;
+  color: rgb(239 68 68 / var(--tw-text-opacity));
+}
+
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.opacity-0 {
+  opacity: 0;
 }
 
 .opacity-100 {
@@ -1116,10 +1027,6 @@ video {
 
 .opacity-50 {
   opacity: 0.5;
-}
-
-.opacity-0 {
-  opacity: 0;
 }
 
 .shadow-2xl {
@@ -1154,11 +1061,6 @@ video {
   background-color: rgb(255 246 246 / var(--tw-bg-opacity));
 }
 
-.hover\:bg-slate-300:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(203 213 225 / var(--tw-bg-opacity));
-}
-
 .hover\:text-red-600:hover {
   --tw-text-opacity: 1;
   color: rgb(220 38 38 / var(--tw-text-opacity));
@@ -1169,43 +1071,17 @@ video {
   color: rgb(220 38 38 / var(--tw-text-opacity));
 }
 
-.group:hover .group-hover\:opacity-0 {
-  opacity: 0;
-}
-
 .group:hover .group-hover\:opacity-100 {
   opacity: 1;
 }
 
-@media (min-width: 768px) {
-  .md\:col-span-3 {
-    grid-column: span 3 / span 3;
-  }
-
-  .md\:col-span-9 {
-    grid-column: span 9 / span 9;
-  }
-
-  .md\:col-span-6 {
-    grid-column: span 6 / span 6;
-  }
-
-  .md\:col-span-8 {
-    grid-column: span 8 / span 8;
-  }
-
-  .md\:col-span-4 {
-    grid-column: span 4 / span 4;
-  }
-}
-
 @media (min-width: 1024px) {
-  .lg\:col-span-9 {
-    grid-column: span 9 / span 9;
-  }
-
   .lg\:col-span-3 {
     grid-column: span 3 / span 3;
+  }
+
+  .lg\:col-span-9 {
+    grid-column: span 9 / span 9;
   }
 
   .lg\:w-full {

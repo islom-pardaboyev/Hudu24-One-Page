@@ -5,12 +5,13 @@ function copyText() {
 
     elResult.textContent = 'Text Copied';
 
-    elModal.classList.remove('top-[-50%]');
-    elModal.classList.remove('invisible');
+    elModal.classList.add('right-3');
+    elModal.classList.remove('-right-64');
+    elModal.classList.remove('invisible')
 
     setTimeout(function () {
         elResult.textContent = '';
-        elModal.classList.add('top-[-50%]');
+        elModal.classList.add('-right-64');
         elModal.classList.add('invisible');
     }, 3000);
 
