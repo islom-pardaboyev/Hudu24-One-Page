@@ -26,7 +26,11 @@ module.exports = {
           DEFAULT: '#DD33330A',
           100: '#DD333314',
           200: '#FFF6F6'
-        }
+        },
+        green: {
+          DEFAULT: '#4CCD99',
+          100: '#007F73'
+        },
       },
       fontFamily: {
         'poppins': ['Poppins', 'sans-serif'],

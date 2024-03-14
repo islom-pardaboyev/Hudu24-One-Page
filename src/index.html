@@ -21,6 +21,12 @@
 
 <body class="font-poppins">
     <main class="container mt-12">
+        <div
+            class="fixed modal left-[45%] bg-white invisible top-[-50%] duration-500 border-t-2 text-2xl rounded-lg p-5 border-green-100 text-green items-center shadow-2xl flex gap-3">
+            <i class="fa-solid fa-circle-check"></i>
+            <p class="result-text"></p>
+        </div>
+
         <div class="flex items-center">
             <a href="#" class="text-dark-default pr-2">
                 <i class='bx bx-home-alt'></i>
@@ -141,22 +147,23 @@
                     <div class="flex items-center  gap-3 text-xl">
                         <p>Ulashish</p>
                         <a href=""><i
-                                class="fa-brands fa-telegram text-grey-100 p-3 border-[#E1E3E6] border-2 hover:border-red-600 hover:bg-red-200 duration-300"></i></a>
+                                class="fa-brands fa-telegram text-grey-100 p-3 border-[#E1E3E6] border-2 hover:border-red-600 hover:text-red-600 hover:bg-red-200 duration-300"></i></a>
                         <a href="">
                             <i
-                                class="fa-brands fa-x-twitter text-grey-100 p-3 border-[#E1E3E6] border-2 hover:border-red-600 hover:bg-red-200 duration-300"></i>
+                                class="fa-brands fa-x-twitter text-grey-100 p-3 border-[#E1E3E6] border-2 hover:border-red-600 hover:text-red-600 hover:bg-red-200 duration-300"></i>
                         </a>
                         <a href="">
                             <i
-                                class="fa-brands fa-facebook text-grey-100 p-3 border-[#E1E3E6] border-2 hover:border-red-600 hover:bg-red-200 duration-300"></i>
+                                class="fa-brands fa-facebook text-grey-100 p-3 border-[#E1E3E6] border-2 hover:border-red-600 hover:text-red-600 hover:bg-red-200 duration-300"></i>
                         </a>
                         <a href=""><i
-                                class="fa-brands fa-instagram text-grey-100 p-3 border-[#E1E3E6] border-2 hover:border-red-600 hover:bg-red-200 duration-300"></i></a>
+                                class="fa-brands fa-instagram text-grey-100 p-3 border-[#E1E3E6] border-2 hover:border-red-600 hover:text-red-600 hover:bg-red-200 duration-300"></i></a>
                     </div>
                     <div
                         class="flex items-center group hover:border-red-600 hover:bg-red-200 gap-3 duration-200 py-2 px-3 border-2">
-                        <p>http://hudud24.uz/posts/288281</p>
-                        <i class="fa-regular fa-copy"></i>
+                        <p class="text">http://hudud24.uz/posts/288281</p>
+                        <i onclick="copyText()"
+                            class="fa-regular fa-copy hover:cursor-pointer hover:bg-slate-300 p-2 rounded-full duration-200"></i>
                     </div>
                 </div>
             </div>
@@ -167,7 +174,8 @@
                         Boshqalar</p>
                 </div>
 
-                <div class="p-4 group border border-transparent hover:border-red-600 hover:bg-red-200 duration-200">
+                <div
+                    class="p-4 group border border-transparent hover:border-red-600 hover:cursor-pointer hover:bg-red-200 duration-200">
                     <div class="text-grey-100 w-[160px] border-grey-100 py-1 px-2 border rounded-full">
                         <p class="flex items-center gap-2"><i class="fa-regular fa-calendar"></i>8-oktabr, 23:23</p>
                     </div>
@@ -181,7 +189,8 @@
 
                 <span class="h-0.5 my-3 bg-grey-300 block"></span>
 
-                <div class="p-4 group border border-transparent hover:border-red-600 hover:bg-red-200 duration-200">
+                <div
+                    class="p-4 group border border-transparent hover:border-red-600 hover:cursor-pointer hover:bg-red-200 duration-200">
                     <div class="text-grey-100 w-[160px] border-grey-100 py-1 px-2 border rounded-full">
                         <p class="flex items-center gap-2"><i class="fa-regular fa-calendar"></i>8-oktabr, 23:23</p>
                     </div>
@@ -195,7 +204,8 @@
 
                 <span class="h-0.5 my-3 bg-grey-300 block"></span>
 
-                <div class="p-4 group border border-transparent hover:border-red-600 hover:bg-red-200 duration-200">
+                <div
+                    class="p-4 group border border-transparent hover:border-red-600 hover:cursor-pointer hover:bg-red-200 duration-200">
                     <div class="text-grey-100 w-[160px] border-grey-100 py-1 px-2 border rounded-full">
                         <p class="flex items-center gap-2"><i class="fa-regular fa-calendar"></i>8-oktabr, 23:23</p>
                     </div>
@@ -209,7 +219,8 @@
 
                 <span class="h-0.5 my-3 bg-grey-300 block"></span>
 
-                <div class="p-4 group border border-transparent hover:border-red-600 hover:bg-red-200 duration-200">
+                <div
+                    class="p-4 group border border-transparent hover:border-red-600 hover:cursor-pointer hover:bg-red-200 duration-200">
                     <div class="text-grey-100 w-[160px] border-grey-100 py-1 px-2 border rounded-full">
                         <p class="flex items-center gap-2"><i class="fa-regular fa-calendar"></i>8-oktabr, 23:23</p>
                     </div>
@@ -224,6 +235,7 @@
             </div>
         </div>
     </main>
+    <script src="./js/index.js"></script>
 </body>
 
 </html>
