@@ -6,7 +6,6 @@ function copyText() {
     elResult.textContent = 'Text Copied';
 
     elModal.classList.remove('top-[-50%]');
-    elModal.classList.add('top-3');
     elModal.classList.remove('invisible');
 
     setTimeout(function () {

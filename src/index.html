@@ -20,14 +20,14 @@
 </head>
 
 <body class="font-poppins">
-    <main class="container mt-12">
+    <main class="mt-12">
         <div
-            class="fixed modal left-[45%] bg-white invisible top-[-50%] duration-500 border-t-2 text-2xl rounded-lg p-5 border-green-100 text-green items-center shadow-2xl flex gap-3">
+            class="fixed modal top-3 -right-64 invisible bg-red-600 duration-500 text-2xl rounded-lg p-5 text-white items-center shadow-2xl flex gap-3">
             <i class="fa-solid fa-circle-check"></i>
             <p class="result-text"></p>
         </div>
 
-        <div class="flex items-center">
+        <div class="flex items-center container">
             <a href="#" class="text-dark-default pr-2">
                 <i class='bx bx-home-alt'></i>
                 Asosiy
@@ -42,8 +42,8 @@
             </a>
         </div>
 
-        <div class="grid grid-cols-12 mt-9.5 overflow-x-hidden gap-6">
-            <div class="col-span-12 md:col-span-9">
+        <div class="grid grid-cols-12 mt-9.5 container overflow-x-hidden gap-6">
+            <div class="col-span-12 lg:col-span-9 overflow-hidden">
                 <p class="text-4xl font-bold">O‘zbekiston Prezidenti Tatariston sanoat salohiyati ko‘rgazmasi bilan
                     tanishdi</p>
                 <div class="flex text-sm text-grey-100 mt-6 mb-4">
@@ -51,7 +51,7 @@
                     <p class="px-6"><i class='bx bx-home-alt'></i> 10-oktabr 2023</p>
                     <p><i class="fa-regular fa-eye mr-1.5"></i>300</p>
                 </div>
-                <img src="./img/home-img.png" alt="">
+                <img src="./img/home-img.png" class="w-full" alt="">
                 <p class="flex text-sm text-grey-200 mt-3">© Foto: <span> hudud24</span></p>
                 <a href=""></a>
                 <div class="flex gap-4.5 border border-red-200 bg-red pl-4 my-4 py-6">
@@ -75,7 +75,7 @@
                     vaziri Denis Manturov bilan uchrashuv bo‘lib o‘tdi. Navbatdagi O‘zbekiston va Rossiya hududlari
                     forumida erishilgan kelishuvlarni, eng avvalo, sanoat kooperatsiyasi loyihalarini amalga oshirish
                     masalalari ko‘rib chiqildi.</p>
-                <img src="./img/image 21.png" class="mt-6" alt="">
+                <img src="./img/image 21.png" class="mt-6 w-full" alt="">
                 <p class="flex text-sm text-grey-200 mt-3">© Foto: <span> hudud24</span></p>
                 <div class="flex gap-6 mt-4 mb-6">
                     <img class="opacity-25" src="./img/image 21 copy 4.png" alt="">
@@ -134,27 +134,31 @@
                         <a href=""><i
                                 class="fa-brands fa-instagram text-grey-100 p-3 border-[#E1E3E6] border-2 hover:border-red-600 hover:text-red-600 hover:bg-red-200 duration-300"></i></a>
                     </div>
-                    <div
-                        class="flex items-center group hover:border-red-600 hover:bg-red-200 gap-3 duration-200 py-2 px-3 border-2">
+                    <div onclick="copyText()"
+                        class="flex items-center hover:cursor-pointer group hover:border-red-600 hover:bg-red-200 gap-3 duration-200 py-2 px-3 border-2">
                         <p class="text">http://hudud24.uz/posts/288281</p>
-                        <i onclick="copyText()"
-                            class="fa-regular fa-copy hover:cursor-pointer hover:bg-slate-300 p-2 rounded-full duration-200"></i>
+                        <i class="fa-regular fa-copy hover:cursor-pointer"></i>
                     </div>
                 </div>
             </div>
-            <div class="col-span-12 md:col-span-3">
-                <img src="./img/Banner.png" class="w-full" alt="">
+            <div class="col-span-12 lg:col-span-3">
+                <img src="./img/Banner.png" class="lg:w-full w-[400px] mx-auto" alt="">
                 <div class="mt-8 mb-3">
                     <p class="flex items-center gap-2 text-2xl font-bold"><span class="w-5 h-5 bg-red-600 block"></span>
                         Boshqalar</p>
                 </div>
 
                 <a href="">
-                    <div class="p-4 group border border-transparent hover:border-red-600 hover:bg-red-200 duration-200">
+                    <div class="p-4 group border text-xs lg:text-base border-transparent hover:border-red-600 hover:bg-red-200 duration-200">
                         <div class="flex items-center justify-between">
-                            <p class="flex items-center gap-2 text-grey-100 w-[160px] border-grey-100 py-1 px-2 border rounded-full"><i
-                                    class="fa-solid fa-calendar-days group-hover:text-red-600"></i>8-oktabr, 23:23</p>
-                            <p class="flex items-center gap-2 text-grey-100 border-grey-100 py-1 px-2 border rounded-full opacity-0 group-hover:opacity-100 duration-200"><i class="fa-regular fa-eye group-hover:text-red-600"></i> 300</p>
+                            <p
+                                class="flex items-center gap-2 text-grey-100 border-grey-100 py-1 px-2 border rounded-full">
+                                <i class="fa-solid fa-calendar-days group-hover:text-red-600"></i>8-oktabr, 23:23
+                            </p>
+                            <p
+                                class="flex items-center gap-2 text-grey-100 border-grey-100 py-1 px-2 border rounded-full opacity-0 group-hover:opacity-100 duration-200">
+                                <i class="fa-regular fa-eye group-hover:text-red-600"></i> 300
+                            </p>
                         </div>
 
                         <p class="text-dark-100 font-bold my-2">O‘zbekiston hisobiga bugun 6 ta medal qo‘shildi (foto)
@@ -169,11 +173,16 @@
 
                 <span class="h-0.5 my-3 bg-grey-300 block"></span>
                 <a href="">
-                    <div class="p-4 group border border-transparent hover:border-red-600 hover:bg-red-200 duration-200">
-                        <div class="flex items-center justify-between">
-                            <p class="flex items-center gap-2 text-grey-100 w-[160px] border-grey-100 py-1 px-2 border rounded-full"><i
-                                    class="fa-solid fa-calendar-days group-hover:text-red-600"></i>8-oktabr, 23:23</p>
-                            <p class="flex items-center gap-2 text-grey-100 border-grey-100 py-1 px-2 border rounded-full opacity-0 group-hover:opacity-100 duration-200"><i class="fa-regular fa-eye group-hover:text-red-600"></i> 300</p>
+                    <div class="p-4 group border text-sm lg:text-base border-transparent hover:border-red-600 hover:bg-red-200 duration-200">
+                        <div class="flex items-center text-[9px] lg:text-base justify-between">
+                            <p
+                                class="flex items-center gap-2 text-grey-100 border-grey-100 py-1 px-2 border rounded-full">
+                                <i class="fa-solid fa-calendar-days group-hover:text-red-600"></i>8-oktabr, 23:23
+                            </p>
+                            <p
+                                class="flex items-center gap-2 text-grey-100 border-grey-100 py-1 px-2 border rounded-full opacity-0 group-hover:opacity-100 duration-200">
+                                <i class="fa-regular fa-eye group-hover:text-red-600"></i> 300
+                            </p>
                         </div>
 
                         <p class="text-dark-100 font-bold my-2">O‘zbekiston hisobiga bugun 6 ta medal qo‘shildi (foto)
@@ -188,11 +197,16 @@
 
                 <span class="h-0.5 my-3 bg-grey-300 block"></span>
                 <a href="">
-                    <div class="p-4 group border border-transparent hover:border-red-600 hover:bg-red-200 duration-200">
+                    <div class="p-4 group border text-xs lg:text-base border-transparent hover:border-red-600 hover:bg-red-200 duration-200">
                         <div class="flex items-center justify-between">
-                            <p class="flex items-center gap-2 text-grey-100 w-[160px] border-grey-100 py-1 px-2 border rounded-full"><i
-                                    class="fa-solid fa-calendar-days group-hover:text-red-600"></i>8-oktabr, 23:23</p>
-                            <p class="flex items-center gap-2 text-grey-100 border-grey-100 py-1 px-2 border rounded-full opacity-0 group-hover:opacity-100 duration-200"><i class="fa-regular fa-eye group-hover:text-red-600"></i> 300</p>
+                            <p
+                                class="flex items-center gap-2 text-grey-100 border-grey-100 py-1 px-2 border rounded-full">
+                                <i class="fa-solid fa-calendar-days group-hover:text-red-600"></i>8-oktabr, 23:23
+                            </p>
+                            <p
+                                class="flex items-center gap-2 text-grey-100 border-grey-100 py-1 px-2 border rounded-full opacity-0 group-hover:opacity-100 duration-200">
+                                <i class="fa-regular fa-eye group-hover:text-red-600"></i> 300
+                            </p>
                         </div>
 
                         <p class="text-dark-100 font-bold my-2">O‘zbekiston hisobiga bugun 6 ta medal qo‘shildi (foto)
@@ -207,11 +221,16 @@
 
                 <span class="h-0.5 my-3 bg-grey-300 block"></span>
                 <a href="">
-                    <div class="p-4 group border border-transparent hover:border-red-600 hover:bg-red-200 duration-200">
+                    <div class="p-4 group border text-xs lg:text-base border-transparent hover:border-red-600 hover:bg-red-200 duration-200">
                         <div class="flex items-center justify-between">
-                            <p class="flex items-center gap-2 text-grey-100 w-[160px] border-grey-100 py-1 px-2 border rounded-full"><i
-                                    class="fa-solid fa-calendar-days group-hover:text-red-600"></i>8-oktabr, 23:23</p>
-                            <p class="flex items-center gap-2 text-grey-100 border-grey-100 py-1 px-2 border rounded-full opacity-0 group-hover:opacity-100 duration-200"><i class="fa-regular fa-eye group-hover:text-red-600"></i> 300</p>
+                            <p
+                                class="flex items-center gap-2 text-grey-100 border-grey-100 py-1 px-2 border rounded-full">
+                                <i class="fa-solid fa-calendar-days group-hover:text-red-600"></i>8-oktabr, 23:23
+                            </p>
+                            <p
+                                class="flex items-center gap-2 text-grey-100 border-grey-100 py-1 px-2 border rounded-full opacity-0 group-hover:opacity-100 duration-200">
+                                <i class="fa-regular fa-eye group-hover:text-red-600"></i> 300
+                            </p>
                         </div>
 
                         <p class="text-dark-100 font-bold my-2">O‘zbekiston hisobiga bugun 6 ta medal qo‘shildi (foto)
@@ -227,7 +246,27 @@
             </div>
         </div>
     </main>
-    <script src="./js/index.js"></script>
+    <script>
+        function copyText() {
+            const text = document.querySelector('.text');
+            const elResult = document.querySelector('.result-text');
+            const elModal = document.querySelector('.modal');
+
+            elResult.textContent = 'Text Copied';
+
+            elModal.classList.add('right-3');
+            elModal.classList.remove('-right-64');
+            elModal.classList.remove('invisible')
+
+            setTimeout(function () {
+                elResult.textContent = '';
+                elModal.classList.add('-right-64');
+                elModal.classList.add('invisible');
+            }, 3000);
+
+            navigator.clipboard.writeText(text.textContent)
+        }
+    </script>
 </body>
 
 </html>

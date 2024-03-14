@@ -610,6 +610,62 @@ video {
   top: -50%;
 }
 
+.right-0 {
+  right: 0px;
+}
+
+.right-1 {
+  right: 0.25rem;
+}
+
+.right-3 {
+  right: 0.75rem;
+}
+
+.-right-3 {
+  right: -0.75rem;
+}
+
+.-right-8 {
+  right: -2rem;
+}
+
+.-right-2 {
+  right: -0.5rem;
+}
+
+.-right-28 {
+  right: -7rem;
+}
+
+.-right-36 {
+  right: -9rem;
+}
+
+.-right-4 {
+  right: -1rem;
+}
+
+.-right-48 {
+  right: -12rem;
+}
+
+.-right-56 {
+  right: -14rem;
+}
+
+.-right-6 {
+  right: -1.5rem;
+}
+
+.-right-64 {
+  right: -16rem;
+}
+
+.right-64 {
+  right: 16rem;
+}
+
 .col-span-12 {
   grid-column: span 12 / span 12;
 }
@@ -632,6 +688,11 @@ video {
 .my-6 {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .mb-14 {
@@ -746,6 +807,22 @@ video {
   width: px;
 }
 
+.w-\[\] {
+  width: ;
+}
+
+.w-\[300px\] {
+  width: 300px;
+}
+
+.w-\[400px\] {
+  width: 400px;
+}
+
+.w-\[170px\] {
+  width: 170px;
+}
+
 .grid-cols-12 {
   grid-template-columns: repeat(12, minmax(0, 1fr));
 }
@@ -778,6 +855,10 @@ video {
   gap: 1.5rem;
 }
 
+.overflow-hidden {
+  overflow: hidden;
+}
+
 .overflow-x-hidden {
   overflow-x: hidden;
 }
@@ -800,6 +881,10 @@ video {
 
 .border-t-2 {
   border-top-width: 2px;
+}
+
+.border-t-4 {
+  border-top-width: 4px;
 }
 
 .border-\[\#E1E3E6\] {
@@ -970,6 +1055,19 @@ video {
   line-height: 1.75rem;
 }
 
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.text-\[10px\] {
+  font-size: 10px;
+}
+
+.text-\[9px\] {
+  font-size: 9px;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -1001,6 +1099,11 @@ video {
 .text-grey-200 {
   --tw-text-opacity: 1;
   color: rgb(164 176 190 / var(--tw-text-opacity));
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .opacity-100 {
@@ -1081,5 +1184,36 @@ video {
 
   .md\:col-span-9 {
     grid-column: span 9 / span 9;
+  }
+
+  .md\:col-span-6 {
+    grid-column: span 6 / span 6;
+  }
+
+  .md\:col-span-8 {
+    grid-column: span 8 / span 8;
+  }
+
+  .md\:col-span-4 {
+    grid-column: span 4 / span 4;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:col-span-9 {
+    grid-column: span 9 / span 9;
+  }
+
+  .lg\:col-span-3 {
+    grid-column: span 3 / span 3;
+  }
+
+  .lg\:w-full {
+    width: 100%;
+  }
+
+  .lg\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 }
